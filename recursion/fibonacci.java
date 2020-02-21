@@ -4,7 +4,7 @@ The fibonacci sequence is a famous bit of mathematics, and it happens to have a 
 fibonacci(0) → 0
 fibonacci(1) → 1
 fibonacci(2) → 1
- */
+*/
 
 public int fibonacci(int n) {
   if (n == 0)
