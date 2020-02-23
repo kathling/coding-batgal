@@ -1,0 +1,24 @@
+/**
+Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14".
+
+changePi("xpix") → "x3.14x"
+changePi("pipi") → "3.143.14"
+changePi("pip") → "3.14p"
+*/
+
+public String changePi(String str) {
+  if (str.length() == 0)
+    return "";
+  else if (str.length() == 1)
+    return str;
+  else {
+    char c1 = str.charAt(0);
+    char c2 = str.charAt(1);
+    
+    if (c1 == 'p' && c2 == 'i') {
+      return "3.14" + changePi(str.substring(2));  
+    }
+    
+    return c1 + changePi(str.substring(1));
+  }
+}
