@@ -14,5 +14,4 @@ public boolean array6(int[] nums, int index) {
     return true;
     
   return array6(nums, index + 1);
-  
 }
